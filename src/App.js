@@ -1,7 +1,14 @@
 import React from "react";
 
-const App = () => {
-  return <div className="App"></div>;
-};
+import Header from "./components/presentational/Header";
+import MainWrapper from "./components/presentational/MainWrapper";
+import AppWrapper from "./components/presentational/AppWrapper";
+
+const App = () => (
+  <AppWrapper className="App">
+    <Header />
+    <MainWrapper />
+  </AppWrapper>
+);
 
 export default App;
