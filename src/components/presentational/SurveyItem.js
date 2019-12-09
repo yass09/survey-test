@@ -5,7 +5,7 @@ import NavigationLink from "./NavigationLink";
 import { SurveyItemElement, SurveyItemElementText } from "./SurveyItemElements";
 
 const Item = styled.li`
-  margin: 0.5em 0;
+  margin: 0.7em 0 0 0;
   width: 100%;
 `;
 
@@ -16,6 +16,7 @@ const SurveyLink = styled(NavigationLink)`
   display: flex;
   justify-content: space-around;
   padding: 0.5em;
+  width: 100%;
 `;
 
 const SurveyItem = ({ survey }) => {

@@ -5,23 +5,23 @@ import SurveyItem from "./SurveyItem";
 import { SurveyItemElement, SurveyItemElementText } from "./SurveyItemElements";
 
 const ListContainer = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 70%;
 `;
 
 const List = styled.ul`
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   font-size: 2em;
   justify-content: center;
-  align-items: center;
+  height: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
 `;
 
@@ -33,7 +33,7 @@ const Header = styled.div`
   display: flex;
   font-size: 2em;
   justify-content: space-around;
-  padding: 0.5em 0;
+  padding: 0.5em;
   width: 100%;
 `;
 
