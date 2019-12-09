@@ -1,2 +1,2 @@
 export const SURVEYLIST = "/";
-export const SURVEYDETAILS = "/movie/:id";
+export const SURVEYDETAILS = "/survey/:name";
