@@ -1,0 +1,1 @@
+export const SELECT_SURVEY = "SELECT_SURVEY";

@@ -1,5 +1,7 @@
+import React, { useContext } from "react";
 import styled from "styled-components";
-import React from "react";
+import SurveysContext from "../../context/SurveysContext";
+import selectSurvey from "../../context/actions/selectSurveyActionCreator";
 
 import NavigationLink from "./NavigationLink";
 import { SurveyItemElement, SurveyItemElementText } from "./SurveyItemElements";
@@ -20,10 +22,17 @@ const SurveyLink = styled(NavigationLink)`
 `;
 
 const SurveyItem = ({ survey }) => {
+  const { dispatch } = useContext(SurveysContext);
+  const handleSelectSurvey = survey => {
+    dispatch(selectSurvey(survey));
+  };
   const { name, code } = survey;
   return (
     <Item>
-      <SurveyLink to={`/survey/${name}`}>
+      <SurveyLink
+        to={`/survey/${name}`}
+        onClick={() => handleSelectSurvey(survey)}
+      >
         <SurveyItemElement>
           <SurveyItemElementText>{name}</SurveyItemElementText>
         </SurveyItemElement>

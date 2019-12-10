@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { getData } from "../../helpers";
+import { LIST_URL } from "../../constants";
 
 import SurveyList from "../presentational/SurveyList";
 import ViewHeader from "../presentational/ViewHeader";
 import ViewContentWrapper from "../presentational/ViewContentWrapper";
 import ViewSection from "../presentational/ViewSection";
-
-import { getData } from "../../helpers";
-import { LIST_URL } from "../../constants";
 
 const SurveyListView = () => {
   const [surveys, setSurveys] = useState([]);
