@@ -30,7 +30,7 @@ const SurveyItem = ({ survey }) => {
   return (
     <Item>
       <SurveyLink
-        to={`/survey/${name}`}
+        to={`/survey/${code}/${name}`}
         onClick={() => handleSelectSurvey(survey)}
       >
         <SurveyItemElement>
